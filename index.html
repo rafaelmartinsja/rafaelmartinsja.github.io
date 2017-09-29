@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Rafael Martins - Webdesigner</title>
     <meta name="description" content="Rafael Martins Webdesigner, sites, logos, e-mail marketing">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/rafaeldesign.css">
     <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
@@ -38,52 +39,74 @@
 		</div>
 	</header>
 <!--Imagem principal -->
-     <section id="destaque">
+     <section class="destaque">
         <img src="img/banner.jpg" alt="imagem do home-office" id="banner">
-    	<article>
-			<h1>Olá, Meu nome é Rafael Martins, sou Webdesigner.</h1>
-			<h3>Meu trabalho é tornar seu site bom para você e seu público.</h3>
-			<h4>Vamos conversar? <a href="#contato">Me mande uma mensagem.</a></h4>
-		</article>
+        <div class="introducao"> 
+    	 Olá, Meu nome é Rafael Martins, sou Webdesigner.<br/>
+		 Meu trabalho é tornar seu site bom para você e seu público.<br/>
+         Quer conversar? <a href="#contato">Entre em contato.</a>
+        </div>    
 	</section>
 <!--Imagem sobre -->
 	<section id="sobre">
 		<h1>Sobre</h1>
             <hr/>
-			<h2>Um pouco sobre mim.</h2>
-				<figure>
-					<img src="img/rafael-martins.jpg" width="320" height="320" alt="Rafael Martins - Webdesigner" id="foto-sobre">
-				</figure>
-					<p class="sobre-descricao">Desenvolver soluções criativas e funcionais que atendam as necessidades para os mais diferentes públicos, essas são as minhas metas.
-					Trabalho desde do planejamento da melhor plataforma para seu website até a criação de materiais digitais e desenvolvimento do site propriamente dito.</p>
+			<h2>Um pouco sobre mim.</h2><br>
+				<img src="img/rafael-martins.jpg" alt="Rafael Martins - Webdesigner" id="foto-sobre">
+				<p class="sobre-descricao">Desenvolver soluções criativas e funcionais que atendam as necessidades para os mais diferentes públicos, essas são as minhas metas.<br>
+				Trabalho desde do planejamento da melhor plataforma para seu website até a criação de materiais digitais e desenvolvimento do site propriamente dito.</p>
+                <div class="descricao-icones">
+                    <a href="https://www.facebook.com/rafaelmartins10" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/rafael-martins-0831471b/" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://www.behance.net/rafaelmartinsja" target="_blank"><i class="fa fa-behance-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/RafaelMartins10" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                </div>    
 	</section>
 <!--Portifólio -->
 	<section id="portifolio">
 		<h1>Portifólio</h1>
             <hr/>
 			<h2>Alguns dos meus projetos</h2>
+            <div class="portifolio-trabalho">
+                <div class="portifolio-trabalho-um">
+                    <img src="img/1-belford-roxo.jpg" class="portifiolio-trabalho-imagens">
+                </div>
+                <div class="portifolio-trabalho-dois">
+                    <img src="img/2-denilson-baniwa.png" class="portifiolio-trabalho-imagens">
+                </div>
+                <div class="portifolio-trabalho-tres">
+                    <img src="img/3-sidewalk.png" class="portifiolio-trabalho-imagens">
+                </div>                                        
+            </div>
+            <div class="btn-container">
+                <button class="btn"><a href="http://behance.net/rafaelmartinsja" target="_blank">Ver todos</a></button>
+            </div>
 	</section>
 <!--Descição de Serviços -->
 	<section id="servicos">
         <h1>Serviços</h1>
         <hr/>
         <h2>Um pouco do que posso fazer por você.</h2>
-        <h3>Site</h3>
-		<h3>Logo</h3>
-		<h3>E-mail Marketing</h3>
-	</section>
+        <div class="site">
+            <p><i class="fa fa-globe fa-3x" aria-hidden="true"></i></p>
+            <strong>Criação do seu web site utilizando o Wordpress para um rápido gerenciamento de conteúdo, gerenciamento segurança e qualidade.</strong>
+        </div>
+        <div class="servico-logo">
+            <p><i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i></p>
+            <strong>A logo que atende ao seu negócio de forma objetiva.</strong>
+        </div>
+        <div>
+            <p><i class="fa fa-at fa-3x" aria-hidden="true"></i></p>
+            <strong>O Layout do seu e-mail marketing para alcançar os objetivos.</strong>
+        </div>    
+        	</section>
 <!--Formulário de Contato -->
 	<section id="contato">
 			<h1>Contato</h1>
 		    <hr/>
             <h2>Vamos tomar um café.</h2>
-                <form>
-                    <label>Nome</label>
-                    <input type="text" id="nome" placeholder="Seu nome" required>
-                    <label>E-Mail</label>
-                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required/>
-                    <input type="submit" value="Enviar">
-                </form>
+                <a href="mailto:rafaelmartinsja@live.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a><br>
+                <a href="tel:+5521987910507"><i class="fa fa-mobile fa-4x" aria-hidden="true"></i></a>
 	</section>
 <!--Rodapé -->
 	<section id="rodape">
