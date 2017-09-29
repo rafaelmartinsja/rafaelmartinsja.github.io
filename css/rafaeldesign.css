@@ -1,0 +1,79 @@
+/*	#00637F - Azul Escuro rows
+	#0494BF - Hover de links
+*/
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+html {
+    font-family: 'Roboto', sans-serif;
+}
+#logotipo {
+	position: absolute;
+    margin-top: -13px;
+    margin-left: 10px;
+}
+header {
+    width: 100%;
+}
+nav {
+	background: #FFF;
+	border-bottom:2px solid #00637F;
+}
+nav ul {
+    list-style:none;
+    margin-left: 164px;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    line-height: 2;
+    word-spacing: 11px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #00637F;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color:#0494BF;
+    border-color: #0494BF;
+    border-bottom: 3px;
+}
+nav ul li a:visited {
+
+}
+banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+article {
+    position: absolute;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+}
+#sobre {
+    font-family: 'Roboto', sans-serif;
+    background-color: #00637F;
+    font-family:  sans-serif;
+    color: #fff;
+}
+.sobre-descricao {
+    text-align: left;
+}
+#foto-sobre {
+    border-radius: 50%;
+}
+#servicos {
+    font-family: 'Roboto', sans-serif;
+    background-color: #00637F;
+    font-family:  sans-serif;
+    color: #fff;
+}
+#rodape {
+    background-color: #00637F;
+    color: #fff;
+    text-align: center;
+    
+}

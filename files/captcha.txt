@@ -1,0 +1,22 @@
+Clé du site
+Utilisez cette clé dans le code HTML que vous proposez à vos utilisateurs.
+6LdQqhAUAAAAAOljTukX5h6a5sPrU2Og8D2TafWL
+
+Clé secrète
+Utilisez cette clé pour toute communication entre votre site et Google. Veillez à ne pas la divulguer, car il s'agit d'une clé secrète.
+6LdQqhAUAAAAAFCSZBWmLSL2hf45u0ledUiq8bik
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<button
+class="g-recaptcha"
+data-sitekey="6LdQqhAUAAAAAOljTukX5h6a5sPrU2Og8D2TafWL"
+data-callback="YourOnSubmitFn">
+Submit
+</button>
+
+Lorsque vos utilisateurs envoient le formulaire dans lequel vous avez intégré reCAPTCHA, vous recevez une chaîne de texte intitulée "g-recaptcha-response" parmi les données utiles. Pour savoir si cet utilisateur a été validé par Google, envoyez une demande POST avec les paramètres suivants :
+URL : https://www.google.com/recaptcha/api/siteverify
+secret (obligatoire)	6LdQqhAUAAAAAFCSZBWmLSL2hf45u0ledUiq8bik
+response (obligatoire)	La valeur "g-recaptcha-response"
+remoteip	Adresse IP de l'utilisateur final
