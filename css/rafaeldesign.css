@@ -163,10 +163,16 @@ nav ul li a:visited {
 }
 .btn {
     display: block;
-    width: 150px;
+    width: 75px;
     margin: 0 auto;
     padding: 10px;
     margin-bottom: 10px;
+    text-decoration: none;
+    background-color: #e8e7e7;
+    border: 1px solid #8f8f90;
+    text-align: center;
+    color: #11a8cc;
+    
 }
 .btn a {
     text-decoration: none;
