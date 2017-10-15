@@ -161,22 +161,12 @@ nav ul li a:visited {
   font-size: 2em;
   text-align: center;
 }
-.btn-container {
-    text-align: center;
-}
-.btn-more {
-    padding:10px 25px;
-    width:120px!important;
-    margin:0 auto!important;
-}
 .btn {
-    display: inline-block;
-    /* testando outra classe btn-more
-    
+    display: block;
+    width: 150px;
+    margin: 0 auto;
     padding: 10px;
     margin-bottom: 10px;
-    margin-top: 0px auto;
-    */
 }
 .btn a {
     text-decoration: none;
