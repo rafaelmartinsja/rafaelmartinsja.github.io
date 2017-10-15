@@ -1,10 +1,33 @@
-/*	#00637F - Azul Escuro rows
+/*	Cores
+    #00637F - Azul Escuro rows
 	#0494BF - Hover de links
 */
  @import url('https://fonts.googleapis.com/css?family=Roboto');
 html {
     font-family: 'Roboto', sans-serif;
 }
+img {
+    max-width: 100%;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+}
+h1 {
+    font-size: 32px;
+    line-height: 40px;
+}
+h2 {
+    font-size: 22px;
+}
+hr {
+    width: 150px;
+}
+article {
+    position: absolute;
+    text-shadow: 0px 0px 5px black;
+
+}
+/*Head*/
 #logotipo {
 	position: absolute;
     margin-top: -13px;
@@ -68,24 +91,6 @@ nav ul li a:visited {
     text-decoration: underline;
     color: #00637F;
 }
-article {
-    position: absolute;
-    text-shadow: 0px 0px 5px black;
-
-}
-h1, h2, h3, h4 {
-    text-align: center;
-}
-h1 {
-    font-size: 32px;
-    line-height: 40px;
-}
-h2 {
-    font-size: 22px;
-}
-hr {
-    width: 150px;
-}
 #destaque {
     width: 100%;
 }
@@ -97,6 +102,7 @@ hr {
     color: #fff;
     height: 340px;
 }
+/*Descricao*/
 .sobre-descricao {
     text-align: left;
 }
@@ -109,34 +115,49 @@ hr {
 .fa-facebook-square {
 
 }
+/*Servicos*/
 #servicos {
     background-color: #00637F;
     color: #fff;
     height: 340px;
 }
-#portifolio {
+/* Portifolio */
+.portifolio {
     height: 500px;
     
 }
-
-.portifolio-trabalho {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+/*Portifolio flexbox */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid silver;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
 }
-.portifiolio-trabalho-imagens {
-    display: inline-block;
-    height: 470px;
-    width: 350px;
+.wrap    { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}  
+/*.wrap li {
+  background: gold;
 }
-.portifolio-trabalho-um {
-    
-}
-.portifolio-trabalho-dois {
-    
-}
-.portifolio-trabalho-tres {
-    
+*/
+.flex-item {
+  padding: 5px;
+  width: 430px;
+  height: auto;
+  margin: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
 }
 .btn-container {
     text-align: center;
@@ -155,6 +176,7 @@ hr {
 .btn a:hover {
     color: #00637F
 }
+/* Footer */
 #rodape {
     background-color: #00637F;
     color: #fff;
