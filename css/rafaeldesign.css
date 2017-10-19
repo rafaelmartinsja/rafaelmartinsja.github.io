@@ -108,6 +108,7 @@ nav ul li a:visited {
 /*Descricao*/
 .sobre-descricao {
     text-align: left;
+    line-height: 22px;
 }
 #foto-sobre {
     height: 220px;
@@ -254,25 +255,30 @@ nav ul li a:visited {
     display: block;
     width: 75px;
     margin: 0 auto;
-    padding: 10px;
+    border-radius: 12px;
+    padding: 15px;
     margin-bottom: 10px;
     text-decoration: none;
-    background-color: #e8e7e7;
-    border: 1px solid #8f8f90;
+    border: 2px solid #0494BF;
     text-align: center;
-    color: #11a8cc;
+    color: #00637F;
     
 }
 .btn a {
     text-decoration: none;
+
 }
+.btn:hover {
+    background-color: #0494BF;
+    color: #fff;
+}
+
+/*
 .btn a:visited {
     text-decoration: none;
     color: #0494BF
-}
-.btn a:hover {
-    color: #00637F
-}
+}*/
+
 /* Footer */
 #rodape {
     background-color: #00637F;
