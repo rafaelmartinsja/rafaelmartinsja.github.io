@@ -262,6 +262,8 @@ nav ul li a:visited {
     border: 2px solid #0494BF;
     text-align: center;
     color: #00637F;
+    transition: all linear 0.5s;
+    -webkit-transition:all linear 0.5s;
     
 }
 .btn a {
