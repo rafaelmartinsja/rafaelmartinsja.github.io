@@ -212,8 +212,20 @@ nav ul li a:visited {
 #servicos {
     background-color: #00637F;
     color: #fff;
-    height: 340px;
+    padding: 20px;
+    align-items: center;
+    padding-bottom: 20px;
 }
+#servicos div {
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
 /* Portifolio */
 .portifolio {
     height: 500px;
@@ -236,10 +248,6 @@ nav ul li a:visited {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }  
-/*.wrap li {
-  background: gold;
-}
-*/
 .flex-item {
   padding: 5px;
   width: 430px;
@@ -274,13 +282,44 @@ nav ul li a:visited {
     background-color: #0494BF;
     color: #fff;
 }
-
-/*
-.btn a:visited {
+/* Efeito hover no portifolio */
+figure.foto-legenda {
+    position: relative;
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: 90%;
+}
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+/* -- Fim do efeito portifolio */
+/* Contato */
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+ul li {
+    margin: 10px;
+}
+ul li a {
     text-decoration: none;
-    color: #0494BF
-}*/
-
+}
 /* Footer */
 #rodape {
     background-color: #00637F;
