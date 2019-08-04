@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
     <!--Metas-->
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="description" content="Criação de web sites com amor e dedicação.">
-    <meta name="keywords" content="Freelancer, Web design, São Gonçalo, Niterói, Rio de Janeiro">
+    <meta name="keywords" content="freelancer, front-End, são Gonçalo, niterói, rio de janeiro">
     <meta name="author" content="Rafael Martins">
-    <title>Rafael Martins - Webdesigner</title>
+    <title>Rafael Martins - Front-End</title>
     <!--Stylesheets-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/rafaeldesign.css">
@@ -31,8 +31,7 @@
 </head>
 <body>
 	<header>
-		<div class="menu">
-		<nav>
+		<nav class="menu">
 		    <a href="http://rafaeldesign.com.br"><img src="img/rafael-design-logo-80x80.png" alt="Logo Rafael Martins" id="logotipo"/></a>
 			<ul>
 			    <li><a href="#sobre">Sobre</a></li>
@@ -41,15 +40,14 @@
 				<li><a href="#contato">Contato</a></li>
             </ul>
 	    </nav>
-		</div>
 	</header>
 <!--Imagem principal -->
      <section class="destaque">
         <img src="img/banner.jpg" alt="imagem do home-office" id="banner">
         <div class="introducao"> 
-    	 Olá, Meu nome é Rafael Martins, sou Webdesigner.<br/>
-		 Meu trabalho é tornar seu site bom para você e seu público.<br/>
-         Quer conversar? <a href="#contato">Entre em contato.</a>
+    	 <p>Olá, Meu nome é Rafael Martins, sou front-end.<br/>
+         Quer conversar?</p>
+         <a href="#contato" class="get-in-touch">Entre em contato.</a>
         </div>    
 	</section>
 <!--Imagem sobre -->
@@ -58,7 +56,7 @@
             <hr/>
 			<h2>Um pouco sobre mim.</h2><br>
 				<img src="img/rafael-martins.jpg" alt="Rafael Martins - Webdesigner" id="foto-sobre">
-				<p class="sobre-descricao">Meu nome é Rafael Martins, tenho 28 anos. Tenho a expertise que podem te ajudar no seu projeto a dar os resultados esperados.<br>Trabalho desde do planejamento da melhor plataforma para seu website até a criação de materiais digitais e desenvolvimento do site propriamente dito.<br>“Cada sonho que você deixa pra trás, é um pedaço do seu futuro que deixa de existir.”<strong> Steve Jobs</strong></p>
+				<p class="sobre-descricao">Meu nome é Rafael Martins. Trabalho com fron-end, já atuei por 2 anos e meio como webdesigner no qual eu criava sites, eram e em wordpress. Hoje estou buscando oportunidades e desafios como front-end.<br>“Cada sonho que você deixa pra trás, é um pedaço do seu futuro que deixa de existir.”<strong> Steve Jobs</strong></p>
                 <ul class="soc">
                     <li><a class="soc-linkedin" href="https://www.linkedin.com/in/rafael-martins-0831471b/" target="_blank"></a></li>
                     <li><a class="soc-behance" href="https://www.behance.net/rafaelmartinsja" target="_blank"></a></li>
@@ -144,18 +142,36 @@
 		    <hr/>
             <h2>Vamos tomar um café.</h2>
             <div class="container">
+            <form action="/pagina-processa-dados-do-form" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="usuario_nome" />
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="usuario_email" />
+                </div>
+                <div>
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg" name="usuario_msg"></textarea>
+                </div>
+                
+                <div class="button">
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+            </form>
             <ul>
-                <li><a href="mailto:rafaelmartinsja@live.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true">rafaelmartinsja@live.com</i></a></li>
-                <li><a href="tel:+5521987910507"><i class="fa fa-mobile fa-4x" aria-hidden="true"></i>(21)987910507</a></li>
+                <li><a href="mailto:rafaelmartinsja@live.com"><i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i></a></li>
+                <li><a href="tel:+5521987910507"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i></a></li>
             </ul>
             </div>        
 	</section>
 <!--Rodapé -->
 	<section id="rodape">
 		<footer>
-			<p>2017 - Rafael Martins Webdesigner</p>
+			<p>2019 - Rafael Martins</p>
 		</footer>
     </section>
-    <script src="https://use.fontawesome.com/b9d4c4c97f.js"></script>
+    
 </body>
 </html>
