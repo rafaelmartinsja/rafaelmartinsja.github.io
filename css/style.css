@@ -9,6 +9,21 @@ p{
     font-family: Georgia, Times New Roman, serif;
     font-size: 14px;
 }
+.btn{
+    border: 3px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+.btn:hover{
+    color:#0494BF;
+    border-color:#00637F;
+}
 /*header*/
 header {
     position: fixed;
@@ -46,6 +61,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 114px;
+    text-align: center;
 }
 .intro h1 {
     font-size: 48px;
@@ -56,8 +72,18 @@ header {
     padding-top: 40px;
 }
 .intro h2 {
-    max-width: 364px;
+    max-width: 260px;
     margin: 0 auto;
+    margin-bottom: 40px;
     font-size: 32px;
+    font-weight: bold;
     color: #fff;
+}
+.intro h2:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin:10px auto 10px auto;
 }
