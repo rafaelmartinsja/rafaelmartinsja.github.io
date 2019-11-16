@@ -87,3 +87,25 @@ header {
     background: #000;
     margin:10px auto 10px auto;
 }
+/*About*/
+#sobre{
+    width: 100%;
+    background: #00637F;
+}
+.photo{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+/*Portifolio*/
+
+/*Services*/
+#servicos{
+    background: #00637F;
+}
+/*Contact*/
+
+/*Footer*/
+#footer{
+    background: #00637F;
+}
