@@ -9,6 +9,21 @@ body {
 p{
     font-family: Georgia, Times New Roman, serif;
     font-size: 14px;
+    line-height: 22px;
+}
+h2 {
+    font-size: 32px;
+    line-height: 55px;
+    text-align: center;
+}
+h3{
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+}
+h4{
+    font-size: 18px;
+    line-height: 14px;
 }
 .btn{
     border: 3px solid #fff;
@@ -92,11 +107,16 @@ header {
 #sobre{
     width: 100%;
     background: #00637F;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .photo{
     width: 220px;
     height: 220px;
     border-radius: 50%;
+}
+.sobre {
+    text-align: center;
 }
 /*Icones https://perfecticons.com/ */
 
