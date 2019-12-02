@@ -17,7 +17,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <a href="#top" class="grid-4"><img src="img/rafael-design-logo-80x80.png" alt="Logo Rafael Martins" id="logotipo"/></a>
+      <a href="#top" class="grid-4"><img src="img/ico/rafael-design-logo-80x80.png" alt="Logo Rafael Martins" id="logotipo"/></a>
       <nav class="grid-12 header_menu"> 
         <ul>
           <li><a href="#sobre">Sobre</a></li>
@@ -54,63 +54,43 @@
     </div>
   </section>
 <!--Portifólio -->
-  <section id="portifolio">
-    <div class="container">
+  <section id="portifolio" class="container">
     <h2>Portifólio</h2>
       <hr/>
       <h3>Alguns dos meus projetos</h3>
-                <ul class="flex-container wrap">
-                    <li class="flex-item">
-                        <figure class="foto-legenda">
-                            <img src="img/site-belfordroxo.png">
-                            <figcaption>
-                                <h4>Belford Roxo Mult Center</h4>
-                                <p>Criação do layout e implementação no CMS Wordpress.</p>
-                            </figcaption>
-                        </figure></li>
-                    <li class="flex-item">
-                            <figure class="foto-legenda">
-                            <img src="img/site-danielfalheiro.png">
-                            <figcaption>
-                                <h4>Daniel Falheiro</h4>
-                                <p>Conferi o conteúdo e ajeintando qualquer incoêrencia no projeto.</p>
-                            </figcaption>
-                        </figure></li>
-                    <li class="flex-item">
-                            <figure class="foto-legenda">
-                            <img src="img/site-denilson.png">
-                            <figcaption>
-                                <h4>Denilson Banilwa</h4>
-                                <p>Configuração do tema, SEO e manutenção.</p>
-                            </figcaption>
-                        </figure></li>
-                    <li class="flex-item">
-                            <figure class="foto-legenda">
-                            <img src="img/site-metha.png">
-                            <figcaption>
-                                <h4>Metha Soluções Empresariais</h4>
-                                <p>Atualização do site para um novo layout.</p>
-                            </figcaption>
-                        </figure></li>
-                    <li class="flex-item">
-                    <figure class="foto-legenda">
-                            <img src="img/site-rio2.png">
-                            <figcaption>
-                                <h4>Rio2</h4>
-                                <p>Manutenção e atualização de conteúdos.</p>
-                            </figcaption>
-                        </figure></li>
-                    <li class="flex-item">
-                        <figure class="foto-legenda">
-                            <img src="img/site-sidewalk.png">
-                            <figcaption>
-                               <h4>Sidewalk</h4>
-                               <p>Adaptação do tema as necessidades do cliente, atualização e manutenção (já encerada.).</p>
-                            </figcaption>
-                        </figure></li>  
-                </ul>
-            <a class="btn" href="http://behance.net/rafaelmartinsja" target="_blank">Ver todos</a>
-    </div>
+        <ul class="projetos">
+          <li class="grid-1-3">
+            <img src="img/1_belford_roxo.jpg">
+            <h4>Belford Roxo Mult Center</h4>
+            <p>Criação do layout e implementação no CMS Wordpress.</p>
+          </li>
+          <li class="grid-1-3">
+            <img src="img/8_daniel_falheiro.jpg">
+            <h4>Daniel Falheiro</h4>
+            <p>Conferi o conteúdo e ajeintando qualquer incoêrencia no projeto.</p>
+          </li>
+          <li class="grid-1-3">
+            <img src="img/2_denilson.jpg">
+            <h4>Denilson Banilwa</h4>
+            <p>Configuração do tema, SEO e manutenção.</p>
+          </li>
+          <li class="grid-1-3">
+            <img src="img/7_metha.jpg">
+            <h4>Metha Soluções Empresariais</h4>
+            <p>Atualização do site para um novo layout.</p>
+          </li>
+          <li class="grid-1-3">
+            <img src="img/4_rio2.jpg">
+            <h4>Rio2</h4>
+            <p>Manutenção e atualização de conteúdos.</p>
+          </li>
+          <li class="grid-1-3">
+            <img src="img/3_sidewalk.jpg">
+            <h4>Sidewalk</h4>
+            <p>Adaptação do tema as necessidades do cliente, atualização e manutenção.</p>
+          </li>  
+        </ul>
+        <a class="btn" href="http://behance.net/rafaelmartinsja" target="_blank">Ver todos</a>
   </section>
 <!--Descição de Serviços -->
   <section id="servicos">
@@ -118,11 +98,11 @@
       <h2>Serviços</h2>
       <hr/>
       <h3>Um pouco do que posso fazer por você.</h3>
-      <img src="img/responsivo.png" alt="site responsivo">
-      <p>Criação do seu web site utilizando o Wordpress para um rápido gerenciamento de conteúdo, gerenciamento segurança e qualidade. A logo que atende ao seu negócio de forma objetiva. O Layout do seu e-mail marketing para alcançar os objetivos.</p>
-      <img src="img/HTML5.jpg" alt="icone HTML5">
-      <img src="img/css3.png" alt="icone css3">
-      <img src="img/js.jpg" alt="icone js">
+      <img class="grid-9" src="img/responsivo.png" alt="site responsivo">
+      <div class="grid-7"></div>
+        <p>Criação do seu web site utilizando o Wordpress para um rápido gerenciamento de conteúdo, gerenciamento segurança e qualidade. A logo que atende ao seu negócio de forma objetiva. O Layout do seu e-mail marketing para alcançar os objetivos.</p>
+        <img class="servicos-front-end" src="img/html-css-js.png" alt="icone HTML5">
+      </div>
     </div>  
   </section>
 <!--Formulário de Contato -->
@@ -132,7 +112,7 @@
         <hr/>
             <h3>Vamos tomar um café.</h3>
             <div class="container">
-            <form action="/pagina-processa-dados-do-form" method="post">
+            <form class="grid-16" action="/pagina-processa-dados-do-form" method="post">
                 <div>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="usuario_nome" />

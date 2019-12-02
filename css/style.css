@@ -4,7 +4,7 @@
 */
  @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, OpenSans, sans-serif;
 }
 p{
     font-family: Georgia, Times New Roman, serif;
@@ -13,17 +13,22 @@ p{
 }
 h2 {
     font-size: 32px;
-    line-height: 55px;
+    line-height: 5px;
+    padding: 10px 0 25px 0;
     text-align: center;
 }
 h3{
     font-size: 22px;
     line-height: 18px;
+    padding: 25px 0 25px 0;
     text-align: center;
 }
 h4{
     font-size: 18px;
     line-height: 14px;
+}
+hr{
+    width: 20%;;
 }
 .btn{
     border: 3px solid #fff;
@@ -108,8 +113,7 @@ header {
 #sobre{
     width: 100%;
     background: #00637F;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 20px;
 }
 .photo{
     width: 220px;
@@ -120,14 +124,32 @@ header {
     text-align: center;
 }
 /*Portifolio*/
-
+#portifolio{
+    padding: 20px;
+}
+.projetos li{
+    text-align: center;  
+}
+.projetos li h4 {
+    text-transform: uppercase;
+    line-height: 20px;  
+}
 /*Services*/
 #servicos{
+    padding: 20px;
     background: #00637F;
 }
+.servicos-front-end{
+    width: 200px;
+}
 /*Contact*/
-
+#contact{
+    padding: 20px;
+}
 /*Footer*/
 #footer{
+    padding: 10px;
     background: #00637F;
+    color: #fff;
+    text-align: center;
 }
