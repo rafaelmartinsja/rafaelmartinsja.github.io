@@ -14,7 +14,7 @@ p{
 h2 {
     font-size: 32px;
     line-height: 5px;
-    padding: 10px 0 25px 0;
+    padding: 25px 0 25px 0;
     text-align: center;
 }
 h3{
@@ -155,6 +155,11 @@ header {
     padding: 20px;
 }
 /*Footer*/
+form{
+    margin: 0 auto;
+    display:block;
+}
+
 #footer{
     padding: 10px;
     background: #00637F;
