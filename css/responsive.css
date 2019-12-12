@@ -1,0 +1,37 @@
+/*Tablet Style*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.intro h1 {
+	font-size: 39px;
+    padding-top: 10px;
+}
+
+}
+/*Smartphone Style*/
+@media only screen and (max-width: 767px) {
+.header{
+	position: relative;
+}
+.header img{
+	margin: 0 auto 20px auto;
+}
+.header_menu{
+	text-align: center;
+}
+.header_menu ul li{
+	margin: 0 auto;
+}
+.header_menu ul li a{
+    float: left;
+    display: block;
+}
+.intro{
+	margin-top: 0px;
+}
+.intro h1 {
+	font-size: 39px;
+    padding-top: 0px;
+}
+
+
+
+}
