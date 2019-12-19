@@ -14,7 +14,7 @@ $email_pass = 'K4WzDIn2ubgM2L'; // Senha do e-mail
 $site_name = 'rafaeldesign'; // Nome do Site
 $site_url = 'www.rafaeldesign.com.br'; // URL do Site
 
-$host_smtp = ''smtp.rafaeldesign.com.br; // HOST SMTP Ex: smtp.domain.com.br
+$host_smtp = 'smtp.rafaeldesign.com.br'; // HOST SMTP Ex: smtp.domain.com.br
 $host_port = '587'; // Porta do Host, geralmente 465 ou 587
 
 
