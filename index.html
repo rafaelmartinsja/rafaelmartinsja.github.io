@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-		<!--Metas-->
-		<meta charset="utf-8">
-		<meta name="description" content="Criação de web sites.">
-		<meta name="keywords" content="freelancer, web designer, front-End">
-		<meta name="author" content="Rafael Martins">
-		<title>Rafael Martins - Webdesigner</title>
-		<!--Stylesheets-->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/grid.css">
-		<link rel="stylesheet" href="css/socion.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/responsive.css">
+	<!--Metas-->
+	<meta charset="utf-8">
+	<meta name="description" content="Criação de web sites.">
+	<meta name="keywords" content="freelancer, web designer, front-End">
+	<meta name="author" content="Rafael Martins">
+	<title>Rafael Martins - Webdesigner</title>
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/socion.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
 	<header class="header">
@@ -30,17 +31,17 @@
 		</div>  
 	</header>
 <!--Imagem principal -->
-		 <section class="intro">
-			<div class="container">
-				<h1>Olá! meu nome é Rafael Martins.<br>eu faço sites.</h1>
-				<h2>Quer conversar?</h2>
-				<a href="#contato" class="btn">Contato</a>
-			</div>    
+	<section class="intro">
+		<div class="container">
+		<h1 data-anime="400" class="fadeInDown">Olá! meu nome é Rafael Martins.<br>eu faço sites.</h1>
+		<h2 data-anime="800" class="fadeInDown">Quer conversar?</h2>
+		<a data-anime="1200" href="#contato" class="fadeInDown btn">Contato</a>
+		</div>    
 	</section>
 <!--Imagem sobre -->
 	<section id="sobre">
 		<div class="container">
-			<div class="sobre">
+			<div  data-anime="1600" class="sobre fadeInDown">
 			<h2>Sobre</h2>
 			<hr/>
 			<h3>Um pouco sobre mim</h3><br>
@@ -113,24 +114,33 @@
 		<h2>Contato</h2>
 		<hr/>
 		<h3>Vamos tomar um chá.</h3>
-		<form class="grid-16 contact_form" action="/pagina-processa-dados-do-form" method="post">
+		<form class="grid-16 contact_form formphp" action="./enviar.php" method="post">
 			<label for="nome">Nome</label>
-			<input type="text" id="nome">
+			<input type="text" id="nome" required>
 			<label for="email">E-mail:</label>
-			<input type="email" id="email">
+			<input type="email" id="email" required>
+
+			<label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+			<input type="text" class="nao-aparece" name="leaveblank">
+			<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+			<input class="nao-aparece" name="dontchange" value="http://">
+			
 			<label for="msg">Mensagem:</label>
-			<textarea id="msg" name="usuario_msg"></textarea>
-			<button type="submit" class="align-center btn">Enviar</button>
+			<textarea id="msg" name="usuario_msg" required></textarea>
+			<button name="enviar" id="enviar" type="submit" class="align-center btn">Enviar</button>
 		</form>
 		
 	</section>
 <!--footer -->
 	<section id="footer">
 		<div class="container">
-		<footer>
-			<p class="grid-16">Rafael Martins</p>
-		</footer>
-	</div>
-	</section>		
+			<footer>
+				<p class="grid-16">Rafael Martins</p>
+			</footer>
+		</div>
+	</section>
+	<script src="./js/simple-anime.js"></script>
+	<script src="./js/simple-form.js"></script>
+	<script src="./js/script.js"></script>		
 </body>
 </html>
