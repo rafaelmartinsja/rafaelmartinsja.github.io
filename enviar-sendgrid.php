@@ -26,7 +26,7 @@ $email->setReplyTo($email_user, $nome_user);
 $email->setSubject('Formulário RafaelDesign');
 $email->addContent('text/plain', $body_content);
 
-$sendgrid = new \SendGrid('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');
+$sendgrid = new \SendGrid('');
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";
